@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sirius2spotify.iml" filepath="$PROJECT_DIR$/.idea/modules/sirius2spotify.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sirius2spotify_main.iml" filepath="$PROJECT_DIR$/.idea/modules/sirius2spotify_main.iml" group="sirius2spotify" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sirius2spotify_test.iml" filepath="$PROJECT_DIR$/.idea/modules/sirius2spotify_test.iml" group="sirius2spotify" />
+    </modules>
+  </component>
+</project>
