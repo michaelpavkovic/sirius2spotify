@@ -35,10 +35,14 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jre8:1.2.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.30" level="project" />
     <orderEntry type="library" name="Gradle: io.ktor:ktor-server-netty:0.9.0" level="project" />
     <orderEntry type="library" name="Gradle: com.beust:klaxon:2.1.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jre7:1.2.0" level="project" />
+    <orderEntry type="library" name="Gradle: io.github.cdimascio:java-dotenv:3.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.xenomachina:kotlin-argparser:2.0.7" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.30" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jre7:1.1.51" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jre8:1.1.51" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:0.20-alpha-8" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-io:0.20-alpha-8" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
@@ -46,6 +50,7 @@
     <orderEntry type="library" name="Gradle: io.ktor:ktor-server-host-common:0.9.0" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-codec-http2:4.1.12.Final" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty.alpn:alpn-api:1.1.3.v20160715" level="project" />
+    <orderEntry type="library" name="Gradle: com.xenomachina:xenocom:0.0.7" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:0.20-alpha-8" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-io-jvm:0.0.6" level="project" />
     <orderEntry type="library" name="Gradle: io.ktor:ktor-server-core:0.9.0" level="project" />
@@ -58,8 +63,8 @@
     <orderEntry type="library" name="Gradle: io.netty:netty-transport:4.1.12.Final" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-common:4.1.12.Final" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty-resolver:4.1.12.Final" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.41" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.2.10" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.10" level="project" />
   </component>
 </module>

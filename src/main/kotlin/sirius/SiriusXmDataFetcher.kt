@@ -26,13 +26,16 @@ class SiriusXmDataFetcher(private val timeIntervalHours: Int) {
 
         var timeIntervalCovered = false
 
-        //Loop through lines of HTML parsing out artists, titles, days, and times
+        // Loop through lines of HTML parsing out artists, titles, days, and times
         while(!timeIntervalCovered) {
             temp = temp.substring(temp.indexOf("</td><td>") + 9)
 
             if (temp.substring(0, 7) == "<a href") {    // End of page has been reached
                 println("loading more")
+
                 html = http.get(baseUrl, urlParams = mapOf("channel" to "$channel", "page" to "${++page}"))
+                Thread.sleep(500)
+
                 temp = html.substring(html.indexOf("Artist") + 6)
                 temp = temp.substring(temp.indexOf("Artist") + 6)
                 temp = temp.substring(temp.indexOf("</td><td>") + 9)
@@ -41,13 +44,19 @@ class SiriusXmDataFetcher(private val timeIntervalHours: Int) {
             artist = temp.substring(0, temp.indexOf("</td><td>"))
 
             temp = temp.substring(temp.indexOf("</td><td>") + 9)
-            title = temp.substring(0, temp.indexOf("</td><td>"))
+            if (temp.indexOf("</td><td>") > -1) {
+                title = temp.substring(0, temp.indexOf("</td><td>"))
+            } else break
 
             temp = temp.substring(temp.indexOf("</td><td>") + 9)
-            day = temp.substring(0, temp.indexOf("</td><td>"))
+            if (temp.indexOf("</td><td>") > -1) {
+                day = temp.substring(0, temp.indexOf("</td><td>"))
+            } else break
 
             temp = temp.substring(temp.indexOf("</td><td>") + 9)
-            time = temp.substring(0, temp.indexOf("</td><td>"))
+            if (temp.indexOf("</td><td>") > -1) {
+                time = temp.substring(0, temp.indexOf("</td><td>"))
+            } else break
 
             val songTimestamp = SimpleDateFormat("MM/dd/yyyy hh:mm:ss a").parse("$day $time")
 

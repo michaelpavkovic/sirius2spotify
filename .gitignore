@@ -193,3 +193,4 @@ hs_err_pid*
 
 # Other stuff added by me
 src/main/kotlin/secrets.kt
+config-sirius2spotify.properties
